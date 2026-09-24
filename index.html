@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Para Sarita 🌼</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- BOTÓN DE MÚSICA -->
+
+    <button
+        id="botonMusica"
+        class="boton-musica"
+    >
+        ♫
+    </button>
+    <!-- MÚSICA -->
+
+<audio id="musica" loop>
+    <source src="musica/Besos En Guerra - Morat.mp3" type="audio/mpeg">
+</audio>
+
+
+    <!-- PÉTALOS -->
+
+    <div id="petalos"></div>
+
+
+    <!-- ================================================== -->
+    <!-- PRIMERA PANTALLA -->
+    <!-- ================================================== -->
+
+    <section class="pantalla activa">
+
+        <div class="contenido">
+
+            <div class="flor">
+                🌼
+            </div>
+
+
+            <div class="pequeno-titulo">
+                HOY ES UN DÍA ESPECIAL
+            </div>
+
+
+            <h1>
+                Flores
+                <br>
+                <span>Amarillas</span>
+            </h1>
+
+
+            <p class="mensaje">
+                Tengo algo que decirte, Sarita...
+            </p>
+
+
+            <button
+                class="boton"
+                onclick="siguientePantalla()"
+            >
+                Abrir 🌼
+            </button>
+
+        </div>
+
+
+        <div class="flecha">
+            ↓
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================== -->
+    <!-- SEGUNDA PANTALLA -->
+    <!-- ================================================== -->
+
+    <section class="pantalla">
+
+        <div class="contenido tarjeta">
+
+            <div class="pequeno-titulo">
+                HAY COSAS QUE NO SIEMPRE SE DICEN...
+            </div>
+
+
+            <h2>
+                Pero hoy quiero compartirlas contigo.
+            </h2>
+
+
+            <p>
+                Hay momentos que parecen pequeños
+                cuando suceden, pero con el tiempo
+                terminan convirtiéndose en recuerdos
+                que uno guarda con cariño.
+            </p>
+
+
+            <button
+                class="boton"
+                onclick="siguientePantalla()"
+            >
+                Continuar 🌼
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================== -->
+    <!-- TERCERA PANTALLA -->
+    <!-- ================================================== -->
+
+    <section class="pantalla">
+
+        <div class="contenido">
+
+            <div class="flor">
+                🌱
+            </div>
+
+
+            <h2>
+                Todo comienza con algo sencillo...
+            </h2>
+
+
+            <p>
+                Una conversación, una sonrisa,
+                un momento inesperado...
+                pequeñas cosas que terminan formando
+                recuerdos especiales.
+            </p>
+
+
+            <button
+                class="boton"
+                onclick="siguientePantalla()"
+            >
+                Continuar 🌼
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================== -->
+    <!-- CUARTA PANTALLA -->
+    <!-- ================================================== -->
+
+    <section class="pantalla">
+
+        <div class="contenido">
+
+            <div class="flor">
+                🌻
+            </div>
+
+
+            <h2>
+                Algunos recuerdos permanecen.
+            </h2>
+
+
+            <p>
+                Aunque el tiempo pase,
+                existen momentos que simplemente
+                vale la pena recordar.
+            </p>
+
+
+            <button
+                class="boton"
+                onclick="siguientePantalla()"
+            >
+                Continuar 🌼
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================== -->
+    <!-- PREGUNTA -->
+    <!-- ================================================== -->
+
+    <section class="pantalla">
+
+        <div class="contenido tarjeta">
+
+            <div class="flor">
+                🌼
+            </div>
+
+
+            <div class="pequeno-titulo">
+                UN PEQUEÑO DETALLE
+            </div>
+
+
+            <h2>
+                ¿Quieres recordar conmigo
+                un momento bonito?
+            </h2>
+
+
+            <p>
+                Solo si quieres.
+                La idea es simplemente abrir
+                un recuerdo.
+            </p>
+
+
+            <div class="botones-respuesta">
+
+                <button
+                    class="boton boton-si"
+                    onclick="siguientePantalla()"
+                >
+                    Sí, quiero 💛
+                </button>
+
+
+                <button
+                    class="boton boton-no"
+                    onclick="mostrarMensaje()"
+                >
+                    Ahora no
+                </button>
+
+            </div>
+
+
+            <p
+                id="respuestaNo"
+                class="respuesta-no"
+            ></p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================== -->
+    <!-- SEXTA PANTALLA: RECUERDOS -->
+    <!-- ================================================== -->
+
+    <section class="pantalla">
+
+        <div class="contenido tarjeta">
+
+            <div class="pequeno-titulo">
+                UN MOMENTO PARA RECORDAR
+            </div>
+
+
+            <h2>
+                Algunos recuerdos que guardo con cariño ♡
+            </h2>
+
+
+            <!-- GALERÍA DE 2 IMÁGENES -->
+
+            <div class="galeria-recuerdos">
+
+                <img
+                    src="imagen/foto1.jpeg"
+                    alt="Recuerdo especial 1"
+                >
+
+
+                <img
+                    src="imagen/foto2.jpeg"
+                    alt="Recuerdo especial 2"
+                >
+
+            </div>
+
+
+            <p>
+                Hay momentos que merecen quedarse
+                para siempre en la memoria.
+            </p>
+
+
+            <button
+                class="boton"
+                onclick="siguientePantalla()"
+            >
+                Continuar 🌼
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================================== -->
+    <!-- SÉPTIMA PANTALLA: MENSAJE FINAL -->
+    <!-- ================================================== -->
+
+    <section class="pantalla">
+
+        <div class="contenido">
+
+            <div class="flor">
+                🌼
+            </div>
+
+
+            <div class="pequeno-titulo">
+                PARA SARITA
+            </div>
+
+
+            <h2>
+                Gracias por haber sido
+                parte de mi historia.
+            </h2>
+
+
+            <p>
+                Hay personas que, aunque pase
+                el tiempo, dejan recuerdos especiales.
+                Esta pequeña página es una forma
+                de guardar con cariño esos momentos
+                que alguna vez fueron importantes.
+            </p>
+
+
+            <div class="flor">
+                🌼
+            </div>
+
+
+            <p class="final">
+                Feliz Día de las Flores Amarillas ♡
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
